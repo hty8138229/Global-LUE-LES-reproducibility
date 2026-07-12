@@ -1,2 +1,36 @@
-# Global-LUE-LES-reproducibility
-Processed data and reproduction materials for the global agricultural land-use efficiency and land ecological stress study.
+# Global LUE-LES Reproducibility Materials
+This repository provides processed datasets, model outputs, available scripts, reproduction instructions, uncertainty-analysis materials, and figure source data for the study on global agricultural land-use efficiency and land ecological stress.
+## Repository structure
+- data/
+- code/
+- documentation/
+## Contents
+### data/
+The data/ folder contains processed datasets and model outputs used in the study.
+| File                                                                     | Description                                                                                                                      |
+| ------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------- |
+| Data S1. Machinery datasets and annualization                            | Machinery inventory, lifetime, annualization, and related assumptions used for machinery-related burden estimation               |
+| Data S2. Fuel-use-based calculation of machinery energy                  | Fuel-use-based calculation data for machinery energy use                                                                         |
+| Data S3. Income-group classification used for machinery proxy assignment | Income-group classification used to assign machinery proxies across regions                                                      |
+| Data S4. Ecoinvent-derived environmental impact factors                  | Environmental impact factors derived from ecoinvent processes                                                                    |
+| Data S5. Contribution shares of upstream components                      | Contribution shares of upstream machinery-related environmental burden components                                                |
+| Data S6. Region-level extended undesirable-output matrix                 | Region-level extended undesirable-output matrix used in the extended upstream-burden assessment                                  |
+| Data S7. Processed SE-SBM input-output data                              | Processed input-output data used in the SE-SBM assessment                                                                        |
+| Data S8. SE-SBM land-use efficiency scores                               | Land-use efficiency scores estimated using the global SE-SBM model                                                               |
+| Data S9. PLEF, CLEF, and LBC by Region and Year                          | Production-based land ecological footprint, consumption-based land ecological footprint, and land biocapacity by region and year |
+| Data S10. SE-SBM Slack Ratios by Region and Variable, 2022               | Ratios of SE-SBM slack variables to the corresponding observed variables                                                         |
+| Data S11. Source Data for Figures 2–6                                    | Numerical source data used to generate Figures 2–6                                                                               |
+### code/
+The code/ folder contains available reproduction packages.
+| File                                      | Description                                                                                             |
+| ----------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| MRIO_CLEF_reproduction_package            | MATLAB scripts and instructions for MRIO-based CLEF calculation                                         |
+| Uncertainty_analysis_reproduction_package | MATLAB scripts and instructions for uncertainty analysis and four-quadrant LUE-LES stability assessment |
+### documentation/
+The documentation/ folder contains reproduction instructions and methodological notes.
+| File                             | Description                                                                  |
+| -------------------------------- | ---------------------------------------------------------------------------- |
+| SE-SBM Reproduction Instructions | Reproduction instructions, model settings, and notes for the SE-SBM analysis |
+## Notes on third-party data and software
+Original third-party databases, including FAOSTAT, AQUASTAT, EDGAR, EXIOBASE, GFN, ReCiPe, and ecoinvent, are not redistributed in this repository and should be obtained from their original providers according to their access conditions and licenses.
+Some parts of the workflow were implemented using third-party routines or graphical-interface software. Where direct redistribution of software routines or project files is not available, this repository provides processed inputs, outputs, source data, model settings, and reproduction instructions.
